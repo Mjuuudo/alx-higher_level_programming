@@ -2,5 +2,5 @@
 start = 97
 
 while start != 123:
-    print(chr(start))
+    print(chr(start), end="")
     start += 1
