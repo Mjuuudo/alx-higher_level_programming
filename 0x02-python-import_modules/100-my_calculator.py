@@ -1,12 +1,12 @@
 #!/usr/bin/python3
-from calculator_1 import add,sub,mul,div
+from calculator_1 import add, sub, mul, div
 import sys
 
 if __name__ == "__main__":
     if len(sys.argv) != 4:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>", end="\n")
         exit(1)
-    elif  len(sys.argv) == 4:
+    elif len(sys.argv) == 4:
         if sys.argv[2] == '+':
             res = add(int(sys.argv[1]), int(sys.argv[3]))
         elif sys.argv[2] == '-':
@@ -15,8 +15,8 @@ if __name__ == "__main__":
             res = mul(int(sys.argv[1]), int(sys.argv[3]))
         elif sys.argv[2] == '/':
             res = div(int(sys.argv[1]), int(sys.argv[3]))
-        else :
-            print("Unknown operator. Available operators: +, -, * and /", end ="\n")
+        else:
+            print("Unknown operator. Available operators: +, -, * and /", end="\n")
             exit(1)
     print(f"{int(sys.argv[1]):d}", end=" ")
     print(f"{sys.argv[2]}", end=" ")
