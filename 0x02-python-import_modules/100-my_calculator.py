@@ -22,6 +22,7 @@ if __name__ == "__main__":
     print(f"{sys.argv[2]}", end=" ")
     print(f"{int(sys.argv[3]):d}", end=" ")
     print("=", end=" ")
-    print(f"{res:d}", end=" ")
+    print(f"{res:d}", end="\n")
+    exit(0)
 elif __name__ != "__main__":
     exit()
