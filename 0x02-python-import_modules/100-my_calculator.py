@@ -16,7 +16,7 @@ if __name__ == "__main__":
         elif sys.argv[2] == '/':
             res = div(int(sys.argv[1]), int(sys.argv[3]))
         else:
-            print("Unknown operator. Available operators: +, -, * and /", end="\n")
+            print("Unknown operator. Available operators: +, -, * and /")
             exit(1)
     print(f"{int(sys.argv[1]):d}", end=" ")
     print(f"{sys.argv[2]}", end=" ")
