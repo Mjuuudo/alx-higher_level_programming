@@ -1,6 +1,9 @@
 #!/usr/bin/python3
-number_keys = __import__('5-number_keys').number_keys
+best_score = __import__('10-best_score').best_score
 
-a_dictionary = { 'language': "C", 'number': 13, 'track': "Low level" }
-nb_keys = number_keys(a_dictionary)
-print("Number of keys: {:d}".format(nb_keys))
+a_dictionary = {'John': 12, 'Bob': 14, 'Mike': 14, 'Molly': 16, 'Adam': 10}
+best_key = best_score(a_dictionary)
+print("Best score: {}".format(best_key))
+
+best_key = best_score(None)
+print("Best score: {}".format(best_key))
